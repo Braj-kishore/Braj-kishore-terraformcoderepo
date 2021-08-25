@@ -40,7 +40,7 @@ $JSON = @'
         }]
     }
 '@
-
+# keys passed to the function must be '/' separated.
 #test case1 passing key rule/ruleid
 $result=jsonparser $JSON 'rule/ruleid'
 Write-Output ($result | ConvertTo-Json)
